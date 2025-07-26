@@ -1,0 +1,6 @@
+project_id = "tu-proyecto"
+region     = "us-central1"
+credentials_file ="path/json_file"
+db_name    = "scores"
+db_user    = "django_user"
+db_password = "clave_super_segura"

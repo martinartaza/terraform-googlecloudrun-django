@@ -1,15 +1,33 @@
+# GCP Project ID
 variable "project_id" {
-  description = "django-cloudrun-mvp"
+  description = "Google Cloud project ID"
   type        = string
 }
 
+# GCP Region to deploy resources
 variable "region" {
-  description = "Región para desplegar recursos"
+  description = "Region for resource deployment"
   type        = string
   default     = "us-central1"
 }
 
+# Path to GCP service account credentials JSON file
 variable "credentials_file" {
-  description = "/Users/smas/challenger/scores/terraform-googlecloudrun-django/django-cloudrun-mvp-e0afffa02d98.json"
+  description = "Path to service account credentials JSON file"
   type        = string
+}
+
+# PostgreSQL database name
+variable "db_name" {
+  default = "scores"
+}
+
+# PostgreSQL username
+variable "db_user" {
+  default = "django_user"
+}
+
+# PostgreSQL user password (sensitive for security)
+variable "db_password" {
+  sensitive = true
 }
