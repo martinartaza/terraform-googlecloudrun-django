@@ -15,9 +15,8 @@ This repository contains the Terraform code needed to deploy a Django applicatio
 
 - [Terraform](https://www.terraform.io/) (v1.5+)
 - [Google Cloud Platform](https://cloud.google.com/)
-- Google Cloud Run (para la app Django)
-- Google Cloud SQL (para PostgreSQL)
-- Git + GitHub (para control de versiones)
+- Google Cloud Run (for the app Django)
+- Google Cloud SQL (for PostgreSQL)
 
 ---
 
